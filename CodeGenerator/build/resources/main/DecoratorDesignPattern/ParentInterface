@@ -1,0 +1,14 @@
+{
+  "name": "Food",
+  "methods": [
+    {
+      "name": "Make",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    }
+  ],
+  "parents": null
+}

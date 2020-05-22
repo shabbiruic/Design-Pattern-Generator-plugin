@@ -1,0 +1,26 @@
+{
+  "name": "Strategy",
+  "methods": [
+    {
+      "name": "doOperation",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "num1",
+          "dataType": "int",
+          "final": false
+        },
+        {
+          "accessModifier": "public",
+          "variableName": "num2",
+          "dataType": "int",
+          "final": false
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

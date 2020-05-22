@@ -1,0 +1,41 @@
+{
+  "parentInterface": {
+    "name": "Internet",
+    "methods": [
+      {
+        "name": "connectTo",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "serverhost",
+            "dataType": "String"
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteClass": {
+    "name": "RealInternet",
+    "variables": null,
+    "methods": null,
+    "abstract": false,
+    "builderNeeded": false
+  },
+  "proxyClass": {
+    "name": "proxyRealInternet",
+    "variables": [
+      {
+        "accessModifier": "private",
+        "variableName": "internet",
+        "dataType": "Internet"
+      }
+    ],
+    "methods": null,
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "mediatorClass": {
+    "name": "MediatorDesignPattern",
+    "variables": null,
+    "methods": null,
+    "abstract": false,
+    "builderNeeded": false
+  },
+  "colleagueClasses": [
+    {
+      "name": "Colleague1",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "mediator",
+          "dataType": "MediatorDesignPattern",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "Colleague1",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "mediator",
+              "dataType": "MediatorDesignPattern",
+              "final": false
+            }
+          ],
+          "implementation": null,
+          "abstract": false,
+          "constructor": true
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Colleague2",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "mediator",
+          "dataType": "MediatorDesignPattern",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "Colleague2",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "mediator",
+              "dataType": "MediatorDesignPattern",
+              "final": false
+            }
+          ],
+          "implementation": null,
+          "abstract": false,
+          "constructor": true
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

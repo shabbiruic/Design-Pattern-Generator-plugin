@@ -1,0 +1,111 @@
+{
+  "parentInterface": {
+    "name": "Link",
+    "methods": [
+      {
+        "name": "setNext",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "link",
+            "dataType": "Link",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      },
+      {
+        "name": "process",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "number",
+            "dataType": "Number",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "objectProcessed": {
+    "name": "Number",
+    "variables": null,
+    "methods": null,
+    "abstract": false,
+    "builderNeeded": false
+  },
+  "concreteClasses": [
+    {
+      "name": "Positive",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "nextInLink",
+          "dataType": "Link",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "setNext",
+          "returnType": "void",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "link",
+              "dataType": "Link",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "nextInLink=link;"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Negative",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "nextInLink",
+          "dataType": "Link",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "setNext",
+          "returnType": "void",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "link",
+              "dataType": "Link",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "nextInLink=link;"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

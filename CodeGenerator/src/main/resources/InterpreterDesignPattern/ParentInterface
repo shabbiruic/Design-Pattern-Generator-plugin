@@ -1,0 +1,19 @@
+{
+  "name": "Expression",
+  "methods": [
+    {
+      "name": "interpreter",
+      "returnType": "boolean",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "con",
+          "dataType": "String"
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

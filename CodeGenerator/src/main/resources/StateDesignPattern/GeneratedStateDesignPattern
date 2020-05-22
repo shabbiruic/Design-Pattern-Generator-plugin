@@ -1,0 +1,69 @@
+{
+  "stateInterface": {
+    "name": "MobileAlertState",
+    "methods": [
+      {
+        "name": "alert",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "stateClass": [
+    {
+      "name": "Vibrate",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Silent",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "contextClass": {
+    "name": "AlertStateContext",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "state",
+        "dataType": "MobileAlertState",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "setstate",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "state",
+            "dataType": "MobileAlertState",
+            "final": false
+          }
+        ],
+        "implementation": [
+          "this.state=state;"
+        ],
+        "abstract": false
+      },
+      {
+        "name": "action",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": false
+      }
+    ],
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

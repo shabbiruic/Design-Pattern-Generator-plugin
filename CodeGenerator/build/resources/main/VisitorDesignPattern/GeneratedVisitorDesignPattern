@@ -1,0 +1,70 @@
+{
+  "visitorInterface": {
+    "name": "visitor",
+    "methods": [
+      {
+        "name": "visit",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "element",
+            "dataType": "Element"
+          }
+        ],
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "elementInterface": {
+    "name": "Element",
+    "methods": [
+      {
+        "name": "accept",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "accept",
+            "dataType": "Visitor"
+          }
+        ],
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteVisitors": [
+    {
+      "name": "VisitorOne",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    },
+    {
+      "name": "VisitorTwo",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ],
+  "concreteElements": [
+    {
+      "name": "ElementOne",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    },
+    {
+      "name": "ElementTwo",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ]
+}

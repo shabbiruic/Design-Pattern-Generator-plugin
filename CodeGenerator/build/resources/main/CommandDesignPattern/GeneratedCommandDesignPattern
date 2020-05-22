@@ -1,0 +1,164 @@
+{
+  "commandInterface": {
+    "name": "Command",
+    "methods": [
+      {
+        "name": "execute",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClass": [
+    {
+      "name": "TubeLight",
+      "variables": null,
+      "methods": [
+        {
+          "name": "tubeLightOn",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        },
+        {
+          "name": "tubeLightOff",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Fan",
+      "variables": null,
+      "methods": [
+        {
+          "name": "fanOn",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        },
+        {
+          "name": "fanOff",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "concreateCommandClass": [
+    {
+      "name": "TubeLightOn",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "tubeLight",
+          "dataType": "TubeLight",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "execute",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "tubeLight.tubeLightOff();"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "TubeLightOff",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "tubeLight",
+          "dataType": "TubeLight",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "execute",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "FanOn",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "fan",
+          "dataType": "Fan",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "execute",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "fan.fanOff();"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "FanOff",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "fan",
+          "dataType": "Fan",
+          "final": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "execute",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": null,
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

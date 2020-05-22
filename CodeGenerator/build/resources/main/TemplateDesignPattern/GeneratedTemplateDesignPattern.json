@@ -1,0 +1,44 @@
+{
+  "template": {
+    "name": "OrderProcessTemplate",
+    "variables": null,
+    "methods": [
+      {
+        "name": "doSelect",
+        "returnType": "void",
+        "parameter": null,
+        "abstract": true
+      },
+      {
+        "name": "doPayment",
+        "returnType": "void",
+        "parameter": null,
+        "abstract": true
+      },
+      {
+        "name": "giftWrap",
+        "returnType": "void",
+        "parameter": null,
+        "abstract": false
+      }
+    ],
+    "builderNeeded": false,
+    "abstract": true
+  },
+  "concreteClasses": [
+    {
+      "name": "NetOrder",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    },
+    {
+      "name": "StoreOrder",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Subject",
+  "methods": [
+    {
+      "name": "attach",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "o",
+          "dataType": "Observer",
+          "final": false
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    },
+    {
+      "name": "deattach",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "o",
+          "dataType": "Observer",
+          "final": false
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    },
+    {
+      "name": "notifyUpdate",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "message",
+          "dataType": "Message",
+          "final": false
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

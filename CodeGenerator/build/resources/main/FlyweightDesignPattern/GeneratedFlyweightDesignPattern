@@ -1,0 +1,70 @@
+{
+  "parentInterface": {
+    "name": "Pen",
+    "methods": [
+      {
+        "name": "setColor",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      },
+      {
+        "name": "draw",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClasses": [
+    {
+      "name": "ThickPen",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "ThinPen",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "factoryClass": {
+    "name": "PenFactory",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "PenMap",
+        "dataType": "HashMap<String,Pen>",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "getPen",
+        "returnType": "Pen",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "pen",
+            "dataType": "Pen",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": false,
+        "constructor": false
+      }
+    ],
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

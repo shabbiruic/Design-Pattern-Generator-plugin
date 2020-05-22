@@ -1,0 +1,46 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="193.5233" until-build="193.*"/>
+  <id>org.example.CodeGenerator</id>
+  <name>Code Generator</name>
+  <vendor>CS 474</vendor>
+  <description>Design pattern Code Generation with minimal input</description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <group id="BehaviouralDesignPattern" text="Behavioural Design Pattern" popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <action class="TriggerGeneration" id="chainOfResponsibilityDesignPattern" text="Chain of Responsibility Design Pattern" description="delegates commands to a chain of processing objects"/>
+      <action class="TriggerGeneration" id="commandDesignPattern" text="Command Design Pattern" description="creates objects which encapsulate actions and parameters"/>
+      <action class="TriggerGeneration" id="interpreterDesignPattern" text="Interpreter Design Pattern" description="implements a specialized language"/>
+      <action class="TriggerGeneration" id="iteratorDesignPattern" text="Iterator Design Pattern" description="accesses the elements of an object sequentially without exposing its underlying representation"/>
+      <action class="TriggerGeneration" id="mediatorDesignPattern" text="Mediator Design Pattern" description="allows loose coupling between classes"/>
+      <action class="TriggerGeneration" id="mementoDesignPattern" text="Memento Design Pattern" description="provides the ability to restore an object to its previous state"/>
+      <action class="TriggerGeneration" id="observerDesignPattern" text="Observer Design Pattern" description="allows a number of observer objects to see an event"/>
+      <action class="TriggerGeneration" id="stateDesignPattern" text="State Design Pattern" description="allows an object to alter its behavior when its internal state changes"/>
+      <action class="TriggerGeneration" id="strategyDesignPattern" text="Strategy Design Pattern" description="allows one of a family of algorithms to be selected on-the-fly at runtime"/>
+      <action class="TriggerGeneration" id="templateDesignPattern" text="Template Design Pattern" description="defines the skeleton of an algorithm as an abstract class"/>
+      <action class="TriggerGeneration" id="visitorDesignPattern" text="Visitor Design Pattern" description="separates an algorithm from an object structure by moving the hierarchy of methods into one object"/>
+    </group>
+    <group id="CreationalDesignPattern" text="Creational Design Pattern" popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="BehaviouralDesignPattern"/>
+      <action class="TriggerGeneration" id="abstractFactoryDesignPattern" text="Abstract Factory Design Pattern" description="groups object factories that have a common theme"/>
+      <action class="TriggerGeneration" id="builderDesignPattern" text="Builder Design Pattern" description="SDK static grouped action example"/>
+      <action class="TriggerGeneration" id="factoryDesignPattern" text="Factory Design Pattern" description="creates objects without specifying the exact class to create"/>
+      <action class="TriggerGeneration" id="prototypeDesignPattern" text="Prototype Design Pattern" description="creates objects by cloning an existing object"/>
+    </group>
+    <group id="structuralDesignPattern" text="Structural Design Pattern" popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="CreationalDesignPattern"/>
+      <action class="TriggerGeneration" id="adapterDesignPattern" text="Adapter Design Pattern" description="allows classes with incompatible interfaces to work together "/>
+      <action class="TriggerGeneration" id="bridgeDesignPattern" text="Bridge Design Pattern" description="decouples an abstraction from its implementation "/>
+      <action class="TriggerGeneration" id="compositeDesignPattern" text="Composite Design Pattern" description="composes zero-or-more similar objects so that they can be manipulated as one object"/>
+      <action class="TriggerGeneration" id="decoratorDesignPattern" text="Decorator Design Pattern" description="dynamically adds overrides behaviour in an existing method of an object"/>
+      <action class="TriggerGeneration" id="facadeDesignPattern" text="Facade Design Pattern" description="provides a simplified interface to a large body of code"/>
+      <action class="TriggerGeneration" id="flyweightDesignPattern" text="Flyweight Design Pattern" description="reduces the cost of creating and manipulating a large number of similar objects"/>
+      <action class="TriggerGeneration" id="proxyDesignPattern" text="Proxy Design Pattern" description="provides a placeholder for another object"/>
+    </group>
+  </actions>
+</idea-plugin>

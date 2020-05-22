@@ -1,0 +1,26 @@
+{
+  "name": "Article",
+  "variables": [
+    {
+      "accessModifier": "public",
+      "variableName": "id",
+      "dataType": "long",
+      "final": false
+    },
+    {
+      "accessModifier": "public",
+      "variableName": "title",
+      "dataType": "String",
+      "final": false
+    },
+    {
+      "accessModifier": "public",
+      "variableName": "content",
+      "dataType": "String",
+      "final": false
+    }
+  ],
+  "methods": null,
+  "builderNeeded": false,
+  "abstract": false
+}

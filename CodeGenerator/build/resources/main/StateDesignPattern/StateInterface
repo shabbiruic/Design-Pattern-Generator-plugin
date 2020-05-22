@@ -1,0 +1,13 @@
+{
+  "name": "MobileAlertState",
+  "methods": [
+    {
+      "name": "alert",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

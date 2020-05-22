@@ -1,0 +1,76 @@
+{
+  "parentInterface": {
+    "name": "Expression",
+    "methods": [
+      {
+        "name": "interpreter",
+        "returnType": "boolean",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "con",
+            "dataType": "String"
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteClass": [
+    {
+      "name": "AndExpression",
+      "variables": [
+        {
+          "accessModifier": "public",
+          "variableName": "exp1",
+          "dataType": "Expression"
+
+        },
+        {
+          "accessModifier": "public",
+          "variableName": "exp2",
+          "dataType": "Expression"
+
+        }
+      ],
+      "methods": [
+        {
+          "name": "AndExpression",
+          "returnType": "boolean",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "exp1",
+              "dataType": "Expression"
+            },
+            {
+              "accessModifier": "public",
+              "variableName": "exp1",
+              "dataType": "Expression"
+            }
+          ],
+          "implementation": ["this.exp1=exp1;","this.exp2=exp2;"],
+          "abstract": false
+        },
+        {
+          "name": "interpreter",
+          "returnType": "boolean",
+          "parameter":[ {
+            "accessModifier": "public",
+            "variableName": "con",
+            "dataType": "String"
+          }],
+          "implementation": [
+            "return exp1.interpreter(con) && exp2.interpreter(con);"
+          ],
+          "abstract": false
+        }
+
+      ],
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "parentInterface": {
+    "name": "Shape",
+    "methods": [
+      {
+        "name": "draw",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClasses": [
+    {
+      "name": "triangle",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Circle",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "parentDecoratorClass": {
+    "name": "DecoratorShape",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "decoratorShape",
+        "dataType": "Shape",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "DecoratorShape",
+        "returnType": "",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "decoratorShape",
+            "dataType": "Shape",
+            "final": false
+          }
+        ],
+        "implementation": [
+          "this.decoratorShape=decoratorShape;"
+        ],
+        "abstract": false,
+        "constructor": true
+      },
+      {
+        "name": "draw",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": [
+          "decoratorShape.draw();"
+        ],
+        "abstract": false,
+        "constructor": false
+      }
+    ],
+    "abstract": true,
+    "builderNeeded": false
+  },
+  "childDecoratedClasses": [
+    {
+      "name": "RedColor",
+      "variables": null,
+      "methods": [
+        {
+          "name": "RedColor",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "decoratorShape",
+              "dataType": "Shape",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "super(decoratorShape);"
+          ],
+          "abstract": false,
+          "constructor": true
+        },
+        {
+          "name": "draw",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "decoratorShape.draw();",
+            "//call other method which implements the extra decorator function"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "BlackColor",
+      "variables": null,
+      "methods": [
+        {
+          "name": "BlackColor",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "decoratorShape",
+              "dataType": "Shape",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "super(decoratorShape);"
+          ],
+          "abstract": false,
+          "constructor": true
+        },
+        {
+          "name": "draw",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "decoratorShape.draw();",
+            "//call other method which implements the extra decorator function"
+          ],
+          "abstract": false,
+          "constructor": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

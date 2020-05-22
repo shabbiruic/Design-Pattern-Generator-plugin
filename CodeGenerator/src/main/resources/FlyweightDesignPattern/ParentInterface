@@ -1,0 +1,22 @@
+{
+  "name": "Pen",
+  "methods": [
+    {
+      "name": "setColor",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    },
+    {
+      "name": "draw",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    }
+  ],
+  "parents": null
+}

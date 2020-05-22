@@ -1,0 +1,67 @@
+{
+  "productInterface": {
+    "name": "Geometry",
+    "methods": [
+      {
+        "name": "draw",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteProduct": [
+    {
+      "name": "Square",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Rectangle",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "abstractFactoryInterface": {
+    "name": "AbstractFactory",
+    "methods": [
+      {
+        "name": "getShape",
+        "returnType": "Shape",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "shapeType",
+            "dataType": "String",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteFactory": [
+    {
+      "name": "RoundShape",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "NormalShape",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

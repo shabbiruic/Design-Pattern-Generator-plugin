@@ -1,0 +1,97 @@
+{
+  "strategyInterface": {
+    "name": "Strategy",
+    "methods": [
+      {
+        "name": "doOperation",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "num1",
+            "dataType": "int",
+            "final": false
+          },
+          {
+            "accessModifier": "public",
+            "variableName": "num2",
+            "dataType": "int",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concreteStrategy": [
+    {
+      "name": "Add",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Subtract",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "contextClass": {
+    "name": "Context",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "strategy",
+        "dataType": "Strategy",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "setStrategy",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "strategy",
+            "dataType": "Strategy",
+            "final": false
+          }
+        ],
+        "implementation": [
+          "this.strategy=strategy"
+        ],
+        "abstract": false
+      },
+      {
+        "name": "doOperation",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "num1",
+            "dataType": "int",
+            "final": false
+          },
+          {
+            "accessModifier": "public",
+            "variableName": "num2",
+            "dataType": "int",
+            "final": false
+          }
+        ],
+        "implementation": [
+          "strategy.doOperation()"
+        ],
+        "abstract": false
+      }
+    ],
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

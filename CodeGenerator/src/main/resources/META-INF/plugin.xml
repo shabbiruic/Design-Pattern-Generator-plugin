@@ -1,0 +1,113 @@
+<idea-plugin>
+    <id>org.example.CodeGenerator</id>
+    <name>Code Generator</name>
+    <vendor>CS 474</vendor>
+
+    <description>Design pattern Code Generation with minimal input</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="BehaviouralDesignPattern" text="Behavioural Design Pattern" popup="true" >
+            <add-to-group group-id="ToolsMenu" anchor="first" />
+
+            <action class="TriggerGeneration" id="chainOfResponsibilityDesignPattern"
+                    text="Chain of Responsibility Design Pattern" description="delegates commands to a chain of processing objects">
+            </action>
+
+            <action class="TriggerGeneration" id="commandDesignPattern"
+                    text="Command Design Pattern" description="creates objects which encapsulate actions and parameters">
+            </action>
+
+            <action class="TriggerGeneration" id="interpreterDesignPattern"
+                    text="Interpreter Design Pattern" description="implements a specialized language">
+            </action>
+
+            <action class="TriggerGeneration" id="iteratorDesignPattern"
+                    text="Iterator Design Pattern" description="accesses the elements of an object sequentially without exposing its underlying representation">
+            </action>
+
+            <action class="TriggerGeneration" id="mediatorDesignPattern"
+                    text="Mediator Design Pattern" description="allows loose coupling between classes">
+            </action>
+
+            <action class="TriggerGeneration" id="mementoDesignPattern"
+                    text="Memento Design Pattern" description="provides the ability to restore an object to its previous state">
+            </action>
+
+            <action class="TriggerGeneration" id="observerDesignPattern"
+                    text="Observer Design Pattern" description="allows a number of observer objects to see an event">
+            </action>
+
+            <action class="TriggerGeneration" id="stateDesignPattern"
+                    text="State Design Pattern" description="allows an object to alter its behavior when its internal state changes">
+            </action>
+
+            <action class="TriggerGeneration" id="strategyDesignPattern"
+                    text="Strategy Design Pattern" description="allows one of a family of algorithms to be selected on-the-fly at runtime">
+            </action>
+
+            <action class="TriggerGeneration" id="templateDesignPattern"
+                    text="Template Design Pattern" description="defines the skeleton of an algorithm as an abstract class">
+            </action>
+
+            <action class="TriggerGeneration" id="visitorDesignPattern"
+                    text="Visitor Design Pattern" description="separates an algorithm from an object structure by moving the hierarchy of methods into one object">
+            </action>
+        </group>
+
+        <group id="CreationalDesignPattern" text="Creational Design Pattern" popup="true" >
+            <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="BehaviouralDesignPattern"/>
+
+            <action class="TriggerGeneration" id="abstractFactoryDesignPattern"
+                    text="Abstract Factory Design Pattern" description="groups object factories that have a common theme">
+            </action>
+
+            <action class="TriggerGeneration" id="builderDesignPattern"
+                    text="Builder Design Pattern" description="SDK static grouped action example">
+            </action>
+
+            <action class="TriggerGeneration" id="factoryDesignPattern"
+                    text="Factory Design Pattern" description="creates objects without specifying the exact class to create">
+            </action>
+
+            <action class="TriggerGeneration" id="prototypeDesignPattern"
+                    text="Prototype Design Pattern" description="creates objects by cloning an existing object">
+            </action>
+        </group>
+
+        <group id="structuralDesignPattern" text="Structural Design Pattern" popup="true" >
+            <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="CreationalDesignPattern"/>
+
+            <action class="TriggerGeneration" id="adapterDesignPattern"
+                    text="Adapter Design Pattern" description="allows classes with incompatible interfaces to work together ">
+            </action>
+            <action class="TriggerGeneration" id="bridgeDesignPattern"
+                    text="Bridge Design Pattern" description="decouples an abstraction from its implementation ">
+            </action>
+            <action class="TriggerGeneration" id="compositeDesignPattern"
+                    text="Composite Design Pattern" description="composes zero-or-more similar objects so that they can be manipulated as one object">
+            </action>
+            <action class="TriggerGeneration" id="decoratorDesignPattern"
+                    text="Decorator Design Pattern" description="dynamically adds overrides behaviour in an existing method of an object">
+            </action>
+            <action class="TriggerGeneration" id="facadeDesignPattern"
+                    text="Facade Design Pattern" description="provides a simplified interface to a large body of code">
+            </action>
+            <action class="TriggerGeneration" id="flyweightDesignPattern"
+                    text="Flyweight Design Pattern" description="reduces the cost of creating and manipulating a large number of similar objects">
+            </action>
+            <action class="TriggerGeneration" id="proxyDesignPattern"
+                    text="Proxy Design Pattern" description="provides a placeholder for another object">
+            </action>
+        </group>
+
+
+    </actions>
+</idea-plugin>

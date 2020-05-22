@@ -1,0 +1,127 @@
+{
+  "abstractClass": {
+    "name": "Color",
+    "variables": null,
+    "methods": [
+      {
+        "name": "clone",
+        "returnType": "Object",
+        "parameter": null,
+        "implementation": [
+          "Object clone = null;",
+          "try {clone = super.clone();}",
+          "catch (CloneNotSupportedException e) {e.printStackTrace();}return clone;}"
+        ],
+        "abstract": false
+      }
+    ],
+    "builderNeeded": false,
+    "abstract": true
+  },
+  "concreteClass": [
+    {
+      "name": "blackColor",
+      "variables": null,
+      "methods": null,
+      "parentClass": null,
+      "parentClazz": {
+        "name": "Color",
+        "variables": null,
+        "methods": [
+          {
+            "name": "clone",
+            "returnType": "Object",
+            "parameter": null,
+            "implementation": [
+              "Object clone = null;",
+              "try {clone = super.clone();}",
+              "catch (CloneNotSupportedException e) {e.printStackTrace();}return clone;}"
+            ],
+            "abstract": false
+          }
+        ],
+        "parentClass": null,
+        "parentClazz": null,
+        "parentInterfaces": [
+          {
+            "name": "Cloneable",
+            "methods": null,
+            "parents": null
+          }
+        ],
+        "builderNeeded": false,
+        "abstract": true
+      },
+      "parentInterfaces": null,
+      "builderNeeded": false,
+      "abstract": false
+    },
+    {
+      "name": "blueColor",
+      "variables": null,
+      "methods": null,
+      "parentClass": null,
+      "parentClazz": {
+        "name": "Color",
+        "variables": null,
+        "methods": [
+          {
+            "name": "clone",
+            "returnType": "Object",
+            "parameter": null,
+            "implementation": [
+              "Object clone = null;",
+              "try {clone = super.clone();}",
+              "catch (CloneNotSupportedException e) {e.printStackTrace();}return clone;}"
+            ],
+            "abstract": false
+          }
+        ],
+        "parentClass": null,
+        "parentClazz": null,
+        "parentInterfaces": [
+          {
+            "name": "Cloneable",
+            "methods": null,
+            "parents": null
+          }
+        ],
+        "builderNeeded": false,
+        "abstract": true
+      },
+      "parentInterfaces": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ],
+  "implementationClass": {
+    "name": "PrototypeDesignPattern",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "ColorMap",
+        "dataType": "Map<String,Color>"
+      }
+    ],
+    "methods": [
+      {
+        "name": "getColor",
+        "returnType": "Color",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "ColorName",
+            "dataType": "String"
+          }
+        ],
+        "implementation": null,
+        "abstract": false
+      }
+    ],
+    "parentClass": null,
+    "parentClazz": null,
+    "parentInterfaces": null,
+    "builderNeeded": false,
+    "abstract": false
+  }
+}

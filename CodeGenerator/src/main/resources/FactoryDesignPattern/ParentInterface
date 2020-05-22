@@ -1,0 +1,14 @@
+{
+  "name": "Shape",
+  "methods": [
+    {
+      "name": "draw",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    }
+  ],
+  "parents": null
+}

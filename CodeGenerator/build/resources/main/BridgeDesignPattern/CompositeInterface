@@ -1,0 +1,14 @@
+{
+  "name": "ColorNew",
+  "methods": [
+    {
+      "name": "applyColor",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "constructor": false,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

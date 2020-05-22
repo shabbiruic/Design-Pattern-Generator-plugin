@@ -1,0 +1,55 @@
+{
+  "parentInterface": {
+    "name": "Shape",
+    "methods": [
+      {
+        "name": "draw",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClasses": [
+    {
+      "name": "Circle",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Triangle",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "designPatternImplClass": {
+    "name": "FactoryDesignPattern",
+    "variables": null,
+    "methods": [
+      {
+        "name": "getShape",
+        "returnType": "Shape",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "shape",
+            "dataType": "String",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": false,
+        "constructor": false
+      }
+    ],
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

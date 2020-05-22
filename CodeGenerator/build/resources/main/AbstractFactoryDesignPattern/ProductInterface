@@ -1,0 +1,13 @@
+{
+  "name": "Paint",
+  "methods": [
+    {
+      "name": "make",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

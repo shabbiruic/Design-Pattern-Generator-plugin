@@ -1,0 +1,14 @@
+{
+  "name": "Brid",
+  "methods": [
+    {
+      "name": "makeSound",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    }
+  ],
+  "parents": null
+}

@@ -1,0 +1,11 @@
+{
+  "name": "List",
+  "variables": [{
+    "accessModifier": "public",
+    "variableName": "name",
+    "dataType": "String"
+  }],
+  "methods": null,
+  "builderNeeded": false,
+  "abstract": false
+}

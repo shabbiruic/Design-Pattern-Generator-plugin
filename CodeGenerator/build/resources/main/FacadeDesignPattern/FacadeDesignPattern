@@ -1,0 +1,56 @@
+{
+  "parentInterface": {
+    "name": "Hotel",
+    "methods": [
+      {
+        "name": "menu",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClasses": [
+    {
+      "name": "Veg",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    },
+    {
+      "name": "NonVeg",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ],
+  "designPatternImplClass": {
+    "name": "FacadeDesignPattern",
+    "variables": null,
+    "methods": [
+      {
+        "name": "getVeg",
+        "returnType": "Veg",
+        "parameter": null,
+        "implementation": null,
+        "abstract": false,
+        "constructor": false
+      },
+      {
+        "name": "getNonVeg",
+        "returnType": "NonVeg",
+        "parameter": null,
+        "implementation": null,
+        "abstract": false,
+        "constructor": false
+      }
+    ],
+    "builderNeeded": false,
+    "abstract": false
+  }
+}

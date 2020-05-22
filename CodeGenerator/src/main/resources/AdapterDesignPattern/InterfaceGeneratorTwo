@@ -1,0 +1,14 @@
+{
+  "name": "ToyDuck",
+  "methods": [
+    {
+      "name": "squeak",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true,
+      "constructor": false
+    }
+  ],
+  "parents": null
+}

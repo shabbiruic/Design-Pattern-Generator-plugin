@@ -1,0 +1,20 @@
+{
+  "name": "Observer",
+  "methods": [
+    {
+      "name": "update",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "message",
+          "dataType": "Message",
+          "final": false
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

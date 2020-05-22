@@ -1,0 +1,29 @@
+{
+  "name": "Message",
+  "variables": [
+    {
+      "accessModifier": "public",
+      "variableName": "content",
+      "dataType": "String",
+      "final": true
+    }
+  ],
+  "methods": [
+
+    {
+      "name": "Message",
+      "returnType": "",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "content",
+          "dataType": "String"
+        }
+      ],
+      "implementation": ["this.content=content;"],
+      "abstract": false
+    }
+  ],
+  "builderNeeded": false,
+  "abstract": false
+}

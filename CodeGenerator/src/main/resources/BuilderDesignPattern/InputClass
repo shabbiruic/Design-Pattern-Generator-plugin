@@ -1,0 +1,32 @@
+{
+  "name": "BuilderDesignPattern",
+  "variables": [
+    {
+      "accessModifier": "public",
+      "variableName": "num1",
+      "dataType": "int"
+    },
+    {
+      "accessModifier": "public",
+      "variableName": "num2",
+      "dataType": "int"
+    }
+  ],
+  "methods": [
+    {
+      "name": "add",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "number",
+          "dataType": "int"
+        }
+      ],
+      "abstract": false,
+      "implementation": null
+    }
+  ],
+  "abstract": false,
+  "builderNeeded": true
+}

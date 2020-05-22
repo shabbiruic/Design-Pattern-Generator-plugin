@@ -1,0 +1,27 @@
+{
+  "name": "Iterator",
+  "methods": [
+    {
+      "name": "reset",
+      "returnType": "void",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true
+    },
+    {
+      "name": "next",
+      "returnType": "ParentDataType",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true
+    },
+    {
+      "name": "hasNext",
+      "returnType": "Boolean",
+      "parameter": null,
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

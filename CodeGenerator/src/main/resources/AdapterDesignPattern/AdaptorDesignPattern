@@ -1,0 +1,97 @@
+{
+  "interfaceGenerator1": {
+    "name": "Brid",
+    "methods": [
+      {
+        "name": "makeSound",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "interfaceGenerator2": {
+    "name": "ToyDuck",
+    "methods": [
+      {
+        "name": "squeak",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "abstract": true,
+        "constructor": false
+      }
+    ],
+    "parents": null
+  },
+  "concreteClasses1": [
+    {
+      "name": "Sparrow",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Pigeon",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "concreteClasses2": [
+    {
+      "name": "PasticToyDuck",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "adapterClass": {
+    "name": "ToyDuckAdpator",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "toyDuck",
+        "dataType": "ToyDuck",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "ToyDuckAdpator",
+        "returnType": "",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "toyDuck",
+            "dataType": "ToyDuck",
+            "final": false
+          }
+        ],
+        "implementation": [
+          "this.toyDuck=toyDuck;"
+        ],
+        "abstract": false,
+        "constructor": false
+      },
+      {
+        "name": "makeSound",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": [
+          "toyDuck.squeak();"
+        ],
+        "abstract": false,
+        "constructor": false
+      }
+    ],
+    "abstract": false,
+    "builderNeeded": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Internet",
+  "methods": [
+    {
+      "name": "connectTo",
+      "returnType": "void",
+      "parameter": [
+        {
+          "accessModifier": "public",
+          "variableName": "serverhost",
+          "dataType": "String"
+        }
+      ],
+      "implementation": null,
+      "abstract": true
+    }
+  ],
+  "parents": null
+}

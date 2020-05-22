@@ -1,0 +1,142 @@
+{
+  "mainAbstractClass": {
+    "name": "Shape",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "color",
+        "dataType": "Color",
+        "final": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "Shape",
+        "returnType": "",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "color",
+            "dataType": "Color",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "constructor": true,
+        "abstract": false
+      },
+      {
+        "name": "applyColor",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "constructor": false,
+        "abstract": true
+      }
+    ],
+    "abstract": true,
+    "builderNeeded": false
+  },
+  "compositionInterface": {
+    "name": "Color",
+    "methods": [
+      {
+        "name": "applyColor",
+        "returnType": "void",
+        "parameter": null,
+        "implementation": null,
+        "constructor": false,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "mainClasses": [
+    {
+      "name": "Triangle",
+      "variables": null,
+      "methods": [
+        {
+          "name": "applyColor",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "color.applyColor();"
+          ],
+          "constructor": false,
+          "abstract": false
+        },
+        {
+          "name": "Triangle",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "color",
+              "dataType": "Color",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "super(color);"
+          ],
+          "constructor": false,
+          "abstract": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Pentagon",
+      "variables": null,
+      "methods": [
+        {
+          "name": "applyColor",
+          "returnType": "void",
+          "parameter": null,
+          "implementation": [
+            "color.applyColor();"
+          ],
+          "constructor": false,
+          "abstract": false
+        },
+        {
+          "name": "Pentagon",
+          "returnType": "",
+          "parameter": [
+            {
+              "accessModifier": "public",
+              "variableName": "color",
+              "dataType": "Color",
+              "final": false
+            }
+          ],
+          "implementation": [
+            "super(color);"
+          ],
+          "constructor": false,
+          "abstract": false
+        }
+      ],
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ],
+  "compositionClasses": [
+    {
+      "name": "Red",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    },
+    {
+      "name": "Blue",
+      "variables": null,
+      "methods": null,
+      "abstract": false,
+      "builderNeeded": false
+    }
+  ]
+}

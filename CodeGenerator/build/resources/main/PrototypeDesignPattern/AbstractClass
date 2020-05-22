@@ -1,0 +1,19 @@
+{
+  "name": "Color",
+  "variables": null,
+  "methods": [
+    {
+      "name": "clone",
+      "returnType": "Object",
+      "parameter": null,
+      "implementation": [
+        "Object clone = null;",
+        "try {clone = super.clone();}",
+        "catch (CloneNotSupportedException e) {e.printStackTrace();}","return clone;"
+      ],
+      "abstract": false
+    }
+  ],
+  "builderNeeded": false,
+  "abstract": true
+}

@@ -1,0 +1,101 @@
+{
+  "publisherInterface": {
+    "name": "Subject",
+    "methods": [
+      {
+        "name": "attach",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "o",
+            "dataType": "Observer",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      },
+      {
+        "name": "deattach",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "o",
+            "dataType": "Observer",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      },
+      {
+        "name": "notifyUpdate",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "message",
+            "dataType": "Message",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+  },
+  "subscriberInterface": {
+    "name": "Observer",
+    "methods": [
+      {
+        "name": "update",
+        "returnType": "void",
+        "parameter": [
+          {
+            "accessModifier": "public",
+            "variableName": "message",
+            "dataType": "Message",
+            "final": false
+          }
+        ],
+        "implementation": null,
+        "abstract": true
+      }
+    ],
+    "parents": null
+  },
+  "concretePublisher": [
+    {
+      "name": "Publisher1",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ],
+  "concreteSubscriber": [
+    {
+      "name": "Subscriber1",
+      "variables": null,
+      "methods": null,
+      "builderNeeded": false,
+      "abstract": false
+    }
+  ],
+  "messageClass": {
+    "name": "Message",
+    "variables": [
+      {
+        "accessModifier": "public",
+        "variableName": "content",
+        "dataType": "String",
+        "final": true
+      }
+    ],
+    "methods": null,
+    "builderNeeded": false,
+    "abstract": false
+  }
+}
