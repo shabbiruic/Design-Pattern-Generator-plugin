@@ -1,7 +1,5 @@
 ## Design Pattern Code Generator Plugin 
 
----
-
 ### Overview
 
 The goal of this project is to create a design pattern code generator **intellij plugin** which will generate the specified designed pattern in java with the minimal user input.
